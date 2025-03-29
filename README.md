@@ -1,0 +1,2 @@
+# AqruxChecker
+RU CHECKER FOR SERVER AQRUX-RUST
