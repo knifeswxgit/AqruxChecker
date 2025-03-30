@@ -1,11 +1,11 @@
-﻿<Window x:Class="RustCheatChecker.MainWindow"
+<Window x:Class="RustCheatChecker.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="AQRUX CHECKER" Height="800" Width="1500"
         WindowStyle="None" AllowsTransparency="True"
-        Background="Transparent">
+        Background="Transparent" Icon="/0d0ba2efc7f34cb3.png" Foreground="Transparent">
     <Window.Effect>
-        <DropShadowEffect Color="Black" Direction="320" ShadowDepth="5" Opacity="0.5" BlurRadius="15"/>
+        <DropShadowEffect Color="Black" Direction="320" ShadowDepth="5" Opacity="0.5" BlurRadius="20"/>
     </Window.Effect>
     <Window.Resources>
         <!-- Цветовая палитра (тёмная тема, темнее и красивее) -->
@@ -30,7 +30,7 @@
         <SolidColorBrush x:Key="LightButtonBackground" Color="#FFE2E8F0"/>
         <SolidColorBrush x:Key="LightButtonHoverBackground" Color="#FFCBD5E1"/>
         <SolidColorBrush x:Key="LightButtonPressedBackground" Color="#FFB7C5D6"/>
-        <SolidColorBrush x:Key="LightTextForeground" Color="#FF1A202C"/>
+        <SolidColorBrush x:Key="LightTextForeground" Color="#FF222529"/>
         <SolidColorBrush x:Key="LightBorderBrush" Color="#FFD1DCE5"/>
 
         <!-- Текущая тема (по умолчанию тёмная) -->
@@ -128,7 +128,7 @@
             </Setter>
             <Setter Property="Effect">
                 <Setter.Value>
-                    <DropShadowEffect Color="Black" Direction="320" ShadowDepth="3" Opacity="0.3" BlurRadius="5"/>
+                    <DropShadowEffect Color="Black" Direction="320" ShadowDepth="3" Opacity="0.3" BlurRadius="3"/>
                 </Setter.Value>
             </Setter>
             <Setter Property="Template">
@@ -191,7 +191,7 @@
             </Setter>
             <Setter Property="Effect">
                 <Setter.Value>
-                    <DropShadowEffect Color="Black" Direction="320" ShadowDepth="3" Opacity="0.3" BlurRadius="5"/>
+                    <DropShadowEffect Color="Black" Direction="320" ShadowDepth="3" Opacity="0.3" BlurRadius="3"/>
                 </Setter.Value>
             </Setter>
             <Setter Property="Template">
@@ -253,7 +253,7 @@
             </Setter>
             <Setter Property="Effect">
                 <Setter.Value>
-                    <DropShadowEffect Color="Black" Direction="320" ShadowDepth="2" Opacity="0.3" BlurRadius="3"/>
+                    <DropShadowEffect Color="Black" Direction="320" ShadowDepth="2" Opacity="0.3" BlurRadius="2"/>
                 </Setter.Value>
             </Setter>
             <Setter Property="Template">
@@ -335,7 +335,7 @@
             <Setter Property="FontWeight" Value="SemiBold"/>
             <Setter Property="Effect">
                 <Setter.Value>
-                    <DropShadowEffect Color="Black" Direction="320" ShadowDepth="1" Opacity="0.2" BlurRadius="2"/>
+                    <DropShadowEffect Color="Black" Direction="320" ShadowDepth="1" Opacity="0.2" BlurRadius="1"/>
                 </Setter.Value>
             </Setter>
         </Style>
@@ -353,7 +353,7 @@
             <Setter Property="Padding" Value="10"/>
             <Setter Property="Effect">
                 <Setter.Value>
-                    <DropShadowEffect Color="Black" Direction="320" ShadowDepth="3" Opacity="0.3" BlurRadius="5"/>
+                    <DropShadowEffect Color="Black" Direction="320" ShadowDepth="3" Opacity="0.3" BlurRadius="3"/>
                 </Setter.Value>
             </Setter>
             <Setter Property="Template">
@@ -518,18 +518,18 @@
                             </TextBlock.Effect>
                         </TextBlock>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                            <Button x:Name="ThemeButton" Click="ThemeButton_Click" Style="{StaticResource ThemeButtonStyle}">
+                            <Button x:Name="ThemeButton" Click="ThemeButton_Click" Style="{StaticResource ThemeButtonStyle}" Height="30" Width="30" Margin="0,0,1170,0">
                                 <Button.Content>
                                     <Path Data="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4Z M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6Z"
                                           Fill="{DynamicResource TextForeground}" Stretch="Uniform" Width="20" Height="20"/>
                                 </Button.Content>
                             </Button>
-                            <Button x:Name="MinimizeButton" Width="40" Height="40" Click="MinimizeButton_Click" Background="Transparent">
+                            <Button x:Name="MinimizeButton" Width="40" Height="40" Click="MinimizeButton_Click" Background="Transparent" BorderBrush="#FF222529">
                                 <Button.Content>
                                     <Path Data="M0,0 H10" Stroke="{DynamicResource TextForeground}" StrokeThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                 </Button.Content>
                             </Button>
-                            <Button x:Name="MaximizeRestoreButton" Width="40" Height="40" Click="MaximizeRestoreButton_Click" Background="Transparent">
+                            <Button x:Name="MaximizeRestoreButton" Width="40" Height="40" Click="MaximizeRestoreButton_Click" Background="Transparent" BorderBrush="#FF222529">
                                 <Button.Content>
                                     <Path Data="M0,0 H10 V10 H0 Z" Stroke="{DynamicResource TextForeground}" StrokeThickness="2" Fill="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                 </Button.Content>
@@ -679,7 +679,7 @@
         <Grid x:Name="WelcomeOverlay" Background="#80000000" Visibility="Collapsed" Opacity="0">
             <Border Background="{DynamicResource PanelBackground}" CornerRadius="20" Width="650" Height="400">
                 <Border.Effect>
-                    <DropShadowEffect Color="Black" Direction="320" ShadowDepth="5" Opacity="0.5" BlurRadius="15"/>
+                    <DropShadowEffect Color="Black" Direction="320" ShadowDepth="5" Opacity="0.5" BlurRadius="25"/>
                 </Border.Effect>
                 <Grid>
                     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
