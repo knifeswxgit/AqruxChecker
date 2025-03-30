@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -32,8 +32,9 @@ namespace RustCheatChecker
             "BestHack", "Novazbesting", "CRC32", "Checchi", "foda.win", "foda",
             "UnityCrashHandler64.zip", "rust.assets", "galaxy.bundle",
             "google_driver", ".macro", "Alkad", "chams", "Keyran",
-            "Rust", "bypassEAC", "EAC", "RustSiris",
-            "Rmacros", "Kraken"
+            "Rust", "bypassEAC", "E_AC", "RustSiris",
+            "Rmacros", "Kraken", "LootEsp", "AimBot", "Обход", "Чит", "Раст",
+            "блюм"
         };
         private readonly HashSet<string> excludedFolders = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
         {
@@ -61,7 +62,7 @@ namespace RustCheatChecker
             @"C:\Program Files (x86)\TunnelBear",
             @"C:\Users\knifeswx\AppData\Local\CapCut",
             @"C:\Program Files (x86)\Steam\friends",
-            @"HEY:\Users\knifeswx\AppData\Roaming\ModrinthApp",
+            @"C:\Users\knifeswx\AppData\Roaming\ModrinthApp",
             @"C:\Program Files (x86)\Roblox",
             @"C:\Users\knifeswx\Documents\Image-Line",
             @"C:\System64",
@@ -75,9 +76,25 @@ namespace RustCheatChecker
             @"C:\Users\knifeswx\AppData\Roaming\.tlauncher\legacy",
             @"C:\Users\knifeswx\AppData\LocalLow\Microsoft\",
             @"C:\Users\knifeswx\AppData\Local\Temp\Roblox",
-            @"C:\Program Files (x86)\Pikacu Test CA Truster",
-            @"C:\Program Files (x86)\Pikacu Test CA Truster",
-            @"C:\Program Files (x86)\Pikacu Test CA Truster",
+            @"C:\Users\knifeswx\source\repos",
+            @"C:\Users\All Users\Waves Audio",
+            @"C:\Users\Public\Documents\Soundtoys",
+            @"C:\Users\knifeswx\Documents\AG\tdata",
+            @"C:\Users\knifeswx\AppData\Roaming\Figma\DesktopProfile",
+            @"C:\Users\knifeswx\AppData\Roaming\FL Cloud Plugins",
+            @"C:\Users\knifeswx\AppData\Roaming\FACEIT\Code Cache",
+            @"C:\Users\knifeswx\AppData\Roaming\EasyAntiCheat\12",
+            @"C:\Users\knifeswx\AppData\Local\Steam\htmlcache",
+            @"C:\Users\Все пользователи\FL Cloud Plugins",
+            @"C:\Users\knifeswx\AppData\Roaming\BetterDiscord\plugins",
+            @"C:\Users\knifeswx\.vscode\extensions",
+            @"C:\ProgramData\Antares",
+            @"C:\Games\Rust\RustClient_Data\StreamingAssets",
+            @"C:\Games\VELOCUTY\tev\Bin\ace-editor",
+            @"C:\Games\Rust\cfg\ai",
+            @"C:\Users\knifeswx\AppData\Local\CEF\User Data",
+            @"C:\ProgramData\Antares",
+            @"C:\ProgramData\Antares",
             @"C:\Program Files (x86)\Radmin VPN"
         };
         private readonly HashSet<string> excludedExtensions = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
