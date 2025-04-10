@@ -1,0 +1,4 @@
+{
+  "latestVersion": "1.7",
+  "downloadUrl": "https://example.com/download"
+}
