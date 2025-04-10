@@ -1,4 +1,4 @@
 {
   "latestVersion": "1.6",
-  "downloadUrl": "https://example.com/download"
+  "downloadUrl": "https://github.com/knifeswxgit/AqruxChecker/releases"
 }
